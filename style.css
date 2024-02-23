@@ -18,6 +18,7 @@ body {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add margin to create space between box and security level */
 }
 
 h2 {
@@ -33,7 +34,7 @@ h2 {
 }
 
 #password {
-  width: calc(100% - 0px);
+  width: calc(100% - 0px); /* Ensure password input covers full width */
   padding: 15px;
   margin-bottom: 20px;
   border: 2px solid #007bff;
@@ -45,15 +46,15 @@ h2 {
 }
 
 #password:focus {
-  border-color: #0056b3;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #0056b3; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
 }
 
 #copyButton {
   position: absolute;
-  top: 39%;
+  top: 39%; /* Position the copy button vertically */
   right: 10px;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* Adjust position vertically */
   padding: 10px;
   background: none;
   border: none;
@@ -77,33 +78,31 @@ h2 {
 
 .options label {
   display: block;
-  margin-bottom: 10px; /* Ajuste del espacio entre los nombres y los checkboxes */
-  position: relative; /* Establece la posición relativa */
-  top: 5px; /* Ajusta la posición hacia arriba */
+  margin-bottom: 10px; /* Adjust space between labels and checkboxes */
+  position: relative; /* Set relative position */
+  top: 5px; /* Adjust position upwards */
 }
 
 .options label[for="length"] {
   display: block;
-  margin-bottom: 5px; /* Reducir el espacio entre la etiqueta y el input */
-  position: relative; /* Establece la posición relativa */
-  top: 20px; /* Ajusta la posición hacia arriba */
+  margin-bottom: 5px; /* Reduce space between label and input */
+  position: relative; /* Set relative position */
+  top: 20px; /* Adjust position upwards */
 }
-
 
 .checkbox-container {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Ajuste del espacio entre los checkboxes */
+  margin-bottom: 10px; /* Adjust space between checkboxes */
 }
 
 .checkbox-label {
   margin-left: 10px;
-  margin-bottom: 10px; /* Agregamos margen inferior */
+  margin-bottom: 10px; /* Add bottom margin */
 }
 
-
 .checkbox-input {
-  appearance: checkbox; /* Agregar esta línea */
+  appearance: checkbox; /* Add checkbox appearance */
   width: 20px;
   height: 20px;
   border: 2px solid #007bff;
@@ -115,11 +114,11 @@ h2 {
 }
 
 .checkbox-input:checked {
-  border-color: #0056b3;
+  border-color: #0056b3; /* Change border color when checkbox is checked */
 }
 
 .checkbox-input:focus {
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
 }
 
 .buttons {
@@ -137,24 +136,24 @@ h2 {
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Change background color on hover */
 }
 
 #length {
-  width: 87%; /* Ajuste para cubrir el ancho completo del box */
-  padding: 20px
+  width: 87%; /* Adjust to cover full width of box */
+  padding: 20px;
 }
 
 #lengthOutput {
   display: block;
-  text-align: center; /* Centra el texto */
-  position: relative; /* Establece la posición relativa */
-  top: -20px; /* Ajusta la posición hacia arriba */
+  text-align: center; /* Center text */
+  position: relative; /* Set relative position */
+  top: -10px; /* Adjust position upwards */
+  width: 100%; /* Set width to 100% */
 }
 
 .security-level {
   text-align: center;
-  margin-top: 10px;
 }
 
 #securityLevel {
