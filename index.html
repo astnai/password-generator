@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Password Generator</h2>
+            <div class="password-container">
+                <input type="text" placeholder="Generated Password" id="password" readonly>
+                <button id="copyButton" onclick="copyPassword()">
+                    <img src="/img/copy.png" alt="Copy Password">
+                </button>
+            </div>           
+            <div class="options">
+                <label for="length">Password length</label>
+                <input type="range" id="length" min="4" max="30" value="12">
+                <output for="length" id="lengthOutput">12</output>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="uppercase" class="checkbox-input">
+                    <label for="uppercase" class="checkbox-label">Uppercase</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="lowercase" class="checkbox-input">
+                    <label for="lowercase" class="checkbox-label">Lowercase</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="numbers" class="checkbox-input">
+                    <label for="numbers" class="checkbox-label">Numbers</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="symbols" class="checkbox-input">
+                    <label for="symbols" class="checkbox-label">Symbols</label>
+                </div>
+            <div class="buttons">
+                <div id="generate" class="button" onclick="genPassword()">Generate</div>
+            </div>
+        </div>
+    </div>
+    <div class="security-level">
+        Security Level: <span id="securityLevel"></span>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

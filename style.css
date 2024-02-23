@@ -1,0 +1,174 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#password {
+  width: calc(100% - 0px);
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#password:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#copyButton {
+  position: absolute;
+  top: 39%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#copyButton img {
+  width: 20px;
+  height: auto;
+}
+
+#copyButton:hover img {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.options {
+  margin-bottom: 30px;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 10px; /* Ajuste del espacio entre los nombres y los checkboxes */
+  position: relative; /* Establece la posición relativa */
+  top: 5px; /* Ajusta la posición hacia arriba */
+}
+
+.options label[for="length"] {
+  display: block;
+  margin-bottom: 5px; /* Reducir el espacio entre la etiqueta y el input */
+  position: relative; /* Establece la posición relativa */
+  top: 20px; /* Ajusta la posición hacia arriba */
+}
+
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Ajuste del espacio entre los checkboxes */
+}
+
+.checkbox-label {
+  margin-left: 10px;
+  margin-bottom: 10px; /* Agregamos margen inferior */
+}
+
+
+.checkbox-input {
+  appearance: checkbox; /* Agregar esta línea */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-right: 5px;
+}
+
+.checkbox-input:checked {
+  border-color: #0056b3;
+}
+
+.checkbox-input:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.buttons {
+  text-align: center;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+#length {
+  width: 87%; /* Ajuste para cubrir el ancho completo del box */
+  padding: 20px
+}
+
+#lengthOutput {
+  display: block;
+  text-align: center; /* Centra el texto */
+  position: relative; /* Establece la posición relativa */
+  top: -20px; /* Ajusta la posición hacia arriba */
+}
+
+.security-level {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#securityLevel {
+  font-weight: bold;
+}
+
+.low-security {
+  color: red;
+}
+
+.medium-security {
+  color: yellow;
+}
+
+.high-security {
+  color: green;
+}
