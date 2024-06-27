@@ -6,5 +6,6 @@ This demo showcases a password generator built using Next.js, TypeScript, and Ta
 - Customize password length and complexity
 - Copy passwords to clipboard
 
-## Demo
-![Descripción opcional](/public/demo.gif)
+---
+
+![Demo](/public/demo.gif)
