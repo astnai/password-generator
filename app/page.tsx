@@ -116,11 +116,11 @@ export default function Home() {
   else strengthColor = "bg-green-500";
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-neutral-light dark:bg-neutral-dark text-gray-900 dark:text-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-neutral-light dark:bg-neutral-dark text-neutral-800 dark:text-gray-100">
       <ToastContainer />
-      <div className="flex flex-col items-center w-11/12 md:w-1/2 lg:w-1/3 bg-box-bg dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+      <div className="flex flex-col items-center w-11/12 md:w-1/2 lg:w-1/3 bg-box-bg dark:bg-neutral-800 p-6 rounded-lg shadow-lg">
         <div className={`w-full h-2 ${strengthColor} mb-4 rounded-lg`}></div>
-        <div className="bg-input-bg dark:bg-gray-700 p-2 rounded-lg mb-4 text-center w-full text-lg font-mono">
+        <div className="bg-input-bg dark:bg-neutral-700 p-2 rounded-lg mb-4 text-center w-full text-lg font-mono">
           {password || "Generate a password"}
         </div>
         <div className="flex items-center mb-4 w-full">
@@ -189,6 +189,12 @@ export default function Home() {
           Copy Password
         </button>
       </div>
+      <a
+        href="https://github.com/astnai/password-generator"
+        className="fixed bottom-4 right-4 text-sm font-mono hover:underline"
+      >
+        source
+      </a>
     </div>
   );
 }
